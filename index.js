@@ -105,8 +105,9 @@ console.log(animalNames(zooAnimals));
 
   function USApop(arr/*Your Code Here*/){
     /*Your Code Here*/
-    return arr.reduce( (acc, curr) => acc.population + curr.population, 0)
+    return arr.reduce( (a, b) => a + b.population, 0)
   }
+  console.log(USApop(zooAnimals), 'Request 4');
   
   
   // 🦁🦁🦁 Callbacks 🦁🦁🦁  
@@ -224,6 +225,11 @@ class CuboidMakerTwo{
   }
 }
 
+const cuboidTwo = new CuboidMakerTwo({
+  length: 4, 
+  width: 5,
+  height: 5
+});
 
 //🦄🦄🦄 Test your volume and surfaceArea methods by uncommenting the logs below: 🦄🦄🦄
 console.log(cuboidTwo.volume()); // 100
