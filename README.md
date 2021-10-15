@@ -42,10 +42,15 @@ Edit this document to include your answers after each question. Make sure to lea
 4. Describe the four principles of the 'this' keyword.
 
     Answer:
+        1) Global Binding or Window Binding occurs when the 'this' keyword is used outside of a function or object, which automatically binds 'this' to the Window object.
+        2) Implicit Binding occurs when 'this' is used within a function or object and refers to whatever is left of the dot. If used within a method 'this' refers to the object.
+        3) New Binding occurs when 'this' is used in a class definition, constructor function or prototype, where 'this' refers to the instance of the object created with the keyword 'new'.
+        4) Explicit Binding occurs when .call, .bind, or .apply is called.  'this' binds to the object entered as the first argument.
+
     
 5. Why do we need super() in an extended class?
 
-    Answer:
+    Answer: super() works with the keyword 'extends' to give access to the parent's functions and variables.
     
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
